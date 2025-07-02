@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Coffee } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import LiveStatus from './LiveStatus';
 
 const Header = () => {
@@ -51,8 +51,12 @@ const Header = () => {
         <div className="flex justify-between items-center py-3 lg:py-4">
           <Link to="/" className="flex items-center space-x-2 lg:space-x-3 group">
             <div className="relative">
-              <div className="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-coffee-600 to-coffee-700 rounded-xl lg:rounded-2xl flex items-center justify-center shadow-medium group-hover:shadow-glow transition-all duration-300">
-                <Coffee className="w-4 h-4 lg:w-5 lg:h-5 text-white" />
+              <div className="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-coffee-600 to-coffee-700 rounded-xl lg:rounded-2xl flex items-center justify-center shadow-medium group-hover:shadow-glow transition-all duration-300 overflow-hidden">
+                <img 
+                  src="2024-07-16.webp" 
+                  alt="It's Brown & Roasted Logo" 
+                  className="w-full h-full object-cover rounded-xl lg:rounded-2xl"
+                />
               </div>
               <div className="absolute -top-0.5 -right-0.5 w-2 h-2 lg:w-3 lg:h-3 bg-accent-500 rounded-full animate-pulse-soft shadow-glow-accent"></div>
             </div>
